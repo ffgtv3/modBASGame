@@ -12,7 +12,7 @@ def index():
         password = request.form["password"]
         users[username] = password  # "Регистрация" пользователя
         return redirect(url_for("forum"))
-    return render_template("index.html")
+    return render_template("reg.html")
 
 @app.route("/forum")
 def forum():
