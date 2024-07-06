@@ -8,7 +8,7 @@
   z-index: 999;
 }
 
-.spinner {
+#loader .spinner {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -20,6 +20,15 @@
   animation: spin 1s linear infinite;
 }
 
+#loader p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 20px;
+}
+
 @keyframes spin {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
@@ -27,4 +36,30 @@
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
   }
+}
+
+#main {
+  display: none;
+}
+
+#main img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#main h1 {
+  font-size: 30px;
+}
+
+#main p {
+  font-size: 16px;
+}
+
+#main a {
+  color: #000;
+  text-decoration: none;
+}
+
+#main a:hover {
+  color: #f00;
 }
